@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Art Portfolio</h1>
+        <p>Explore my pencil portraits and more!</p>
+    </header>
+    <main>
+        <section class="gallery">
+            <h2>My Portraits</h2>
+            <div class="artwork">
+                <img src="WhatsApp Image 2024-08-24 at 00.26.19_a69c61ff.jpg" alt="Pencil Portrait 1">
+                <p>Pencil Portrait 1</p>
+            </div>
+            <div class="artwork">
+                <img src="WhatsApp Image 2024-08-24 at 00.26.46_e46aae6c.jpg" alt="Pencil Portrait 2">
+                <p>Pencil Portrait 2</p>
+            </div>
+            <div class="artwork">
+                <img src="IMG_20240620_153939.jpg" alt="Pencil Portrait 3">
+                <p>Pencil Portrait 3</p>
+            </div>
+            <div class="artwork">
+                <img src="WhatsApp Image 2024-08-24 at 00.27.03_3f6d626a.jpg" alt="Pencil Portrait 4">
+                <p>Pencil Portrait 4</p>
+            </div>
+            <div class="artwork">
+                <img src="WhatsApp Image 2024-08-24 at 00.27.32_294ce084.jpg" alt="Pencil Portrait 5">
+                <p>Pencil Portrait 5</p>
+            </div>
+            <div class="artwork">
+                <img src="WhatsApp Image 2024-08-24 at 00.28.58_ff715cfb.jpg" alt="Pencil Portrait 6">
+                <p>Pencil Portrait 6</p>
+            </div>
+            <div class="artwork">
+                <img src="WhatsApp Image 2024-08-24 at 00.30.06_882d2ffd.jpg" alt="Pencil Portrait 7">
+                <p>Pencil Portrait 7</p>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>GET IN TOUCH</h2>
+            <h1>CONTACT</h1>
+            <P>Thanks for visiting the site.
+                if you have any queries or doubts feel free to mail me.
+            </P>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" onclick="openpopup()">Send Message</button>
+                <div class="popup" id="popup">
+                    <img src="23534659-Photoroom.png">
+                    <h2>THANK YOU!</h2>
+                    <p>Your details has been successfully submitted.Thanks!</p>
+                    <button type="button" onclick="closepopup()">OK</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; sri_arts_. All rights reserved.</p>
+    </footer>
+    <script src="script.js">
+        let popup = document.getElementById("popup");
+
+        function openpopup(){
+            popup.classList.add("open-popup");
+
+        }
+        function closepopup(){
+            popup.classList.add("close-popup");
+
+        }
+    </script>
+</body>
+</html>

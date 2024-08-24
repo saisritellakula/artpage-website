@@ -1,0 +1,98 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #90fd74;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.artwork {
+    margin: 10px;
+    text-align: center;
+}
+
+.artwork img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.contact {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.popup{
+    width: 400px;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0,4s;
+}
+.open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+button:hover {
+    background-color: aquamarine;
+}
