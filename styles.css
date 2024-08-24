@@ -16,6 +16,10 @@ header {
 
 h1 {
     margin: 0;
+
+}
+h2{
+    text-align: center;
 }
 
 .gallery {
@@ -23,6 +27,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
+
 }
 
 .artwork {
@@ -31,8 +36,8 @@ h1 {
 }
 
 .artwork img {
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 500px;
     border: 2px solid #ccc;
     border-radius: 10px;
 }
